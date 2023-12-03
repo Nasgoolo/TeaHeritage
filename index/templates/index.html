@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>My Django Project</title>
+    </head>
+    <body>
+
+        <h1>Welcome to ЧайнаСпадщина.ua</h1>
+            <h1>ЧайнаСпадщина.ua - це український інтернет-магазин, присвячений чаю та його багатогранній спадщині. Ми віримо в те, що чай — це не просто напій, а справжня культурна скарбниця, яка об'єднує традиції та смакові вподобання. Наш асортимент включає в себе різноманітні сорти чаю з усього світу, але особливу увагу ми приділяємо українським чайним традиціям та унікальним смакам.
+
+        На ЧайнаСпадщина.ua ви знайдете вишукані сорти чаю, які підкреслять ваш особистий смак та принесуть вам насолоду кожного ковзання. Ми дбаємо про якість наших продуктів та пропонуємо широкий вибір чайних аксесуарів для того, щоб ваш чайний час став ще більш приємним та комфортним.
+
+        ЧайнаСпадщина.ua — це не просто магазин, а місце, де ви можете відчути атмосферу та смак минулих та сучасних чайних традицій. Поглибіться в світ ароматного задоволення з ЧайнаСпадщина.ua, де кожен чайний листок — це шматочок спадщини, який ми із задоволенням ділимо з вами.</h1>
+
+        <button id="loginBtn">Login</button>
+
+        <!-- Modal -->
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="closeBtn">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password">
+
+              <button type="button" id="submitBtn">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <script src="{% static 'js/script.js' %}"></script>
+    </body>
+</html>
