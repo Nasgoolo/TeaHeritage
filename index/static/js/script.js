@@ -1,22 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var loginModal = document.getElementById('loginModal');
     var loginBtn = document.getElementById('loginBtn');
-    var closeBtn = document.getElementById('closeBtn');
+    var loginDropdown = document.getElementById('loginDropdown');
+    var loginSubmit = document.getElementById('loginSubmit');
 
-    // Display the modal
+    // Показати або приховати випадаюче вікно при кліку на кнопку
     loginBtn.addEventListener('click', function() {
-        loginModal.style.display = 'block';
+        loginDropdown.style.display = (loginDropdown.style.display === 'block') ? 'none' : 'block';
     });
 
-    // Close the modal
-    closeBtn.addEventListener('click', function() {
-        loginModal.style.display = 'none';
-    });
+    // Обробник події для обробки логіну
+    loginSubmit.addEventListener('click', function() {
+        var email = document.getElementById('exampleDropdownFormEmail2').value;
+        var password = document.getElementById('exampleDropdownFormPassword2').value;
 
-    // Close the modal if the user clicks outside of it
-    window.addEventListener('click', function(event) {
-        if (event.target === loginModal) {
-            loginModal.style.display = 'none';
-        }
+        // Додайте вашу логіку логіну тут
+        console.log('Email:', email);
+        console.log('Password:', password);
+
+        // Закрити випадаюче вікно
+        loginDropdown.style.display = 'none';
     });
 });
