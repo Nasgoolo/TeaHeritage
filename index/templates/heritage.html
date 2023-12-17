@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Main page</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_in">
+            <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+                <div>
+                    <a class="navbar-brand mx-auto" href="contact">0951202319</a>
+                </div>
+                <div>
+                    <a class="navbar-brand mx-auto" href="http://127.0.0.1:8000">Чайна Спадщина.ua</a>
+                </div>
+                <div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Вхід/Реєстрація</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Пошук" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Знайти</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+
+            <div class="header_nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Чай
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Пуер</a>
+                                  <a class="dropdown-item" href="#">Чорний чай</a>
+                                  <a class="dropdown-item" href="#">Зелений чай</a>
+                                  <a class="dropdown-item" href="#">Трав'яний і квітковий чай</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Кава
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Кава в зернах</a>
+                                  <a class="dropdown-item" href="#">Кава мелена</a>
+                                  <a class="dropdown-item" href="#">Арабіка</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Какао
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Какао боби і крупка</a>
+                                  <a class="dropdown-item" href="#">Какао-порошок</a>
+                                  <a class="dropdown-item" href="#">Шоколадні напої</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Посуд
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Чайники</a>
+                                  <a class="dropdown-item" href="#">Чашки</a>
+                                  <a class="dropdown-item" href="#">Набори посуду</a>
+                                  <a class="dropdown-item" href="#">Чайні аксесуари</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Десерти
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Джем</a>
+                                  <a class="dropdown-item" href="#">Сухофрукти</a>
+                                  <a class="dropdown-item" href="#">Цукерки</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <div class="body">
+        <h2>Ласкаво просимо на наш веб-сайт!</h2>
+        <p>Тут ви знайдете багато цікавого контенту.</p>
+        <!-- Додайте інші елементи та контент -->
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Мій веб-сайт. Усі права захищено.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Політика конфіденційності</a></li>
+                <li><a href="#">Умови використання</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
